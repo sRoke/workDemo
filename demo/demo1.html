@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href='./app.scss'/>
+
+ 
+
+</head>
+
+  
+  
+  
+  
+   <div class="parent-wrap" layout="row">
+                    <div class="block"></div>
+                    <div flex class="parent" layout="row">
+                        <div flex class="comment-wrap" layout="column" layout-align="center stretch">
+                            <textarea flex ng-model="cms.replyContent"></textarea>
+                            <div layout="row">
+                                <i flex></i>
+                                <button class="comment-btn" ng-click="replySubmit(cms)">提交</button>
+                            </div>
+                        </div>
+                        <div ng-click="closeReply(cms)">X</div>
+                    </div>
+                </div>

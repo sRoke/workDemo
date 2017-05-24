@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"/>
+
+
+<style>
+body{
+padding-top: 50px;
+}
+</style>
+</head>
+<body class="container" ng-app="app" ng-controller="MainCtrl as main">
+    <div class="rentOrderDetailBody">
+                <div class="flow">
+                    <div class="rowLine" style="left: -75px;width:600px"></div>
+                    <ul class="numberUl">
+                        <li ng-class="{'cur':classMap.class[0].cur}">
+                            <p class="txt">买家申请退款</p>
+                            <div class="circleNum">
+                                <b>1</b>
+                                <div class="iWrap" ng-if="refund.status != 'CLOSED'"><i class="glyphicon glyphicon-ok"></i></div>
+                            </div>
+                            <p class="dateTime">{{classMap.class[0].date| date:"yyyy-MM-dd HH:mm"}}</p>
+                        </li>
+                        <li ng-class="{'cur':classMap.class[1].cur}" id="step2">
+                            <p class="txt">商家处理退货信息</p>
+                            <div class="circleNum">
+                                <b>2</b>
+                                <div class="iWrap" ng-if="refund.status != 'CLOSED'&&  refundNum>0"><i class="glyphicon glyphicon-ok"></i></div>
+                                <div class="leftLine" ng-if="refund.status != 'CLOSED'&&  refundNum>0"></div>
+                            </div>
+                            <p class="dateTime">{{classMap.class[1].date| date:"yyyy-MM-dd HH:mm"}}</p>
+                        </li>
+                        <li ng-class="{'cur':classMap.class[2].cur}">
+                            <p class="txt">买家退货给商家</p>
+                            <div class="circleNum">
+                                <b>3</b>
+                                <div class="iWrap" ng-if="refund.status != 'CLOSED'&& refundNum>1"><i class="glyphicon glyphicon-ok"></i></div>
+                                <div class="leftLine" ng-if="refund.status != 'CLOSED'&& refundNum>1"></div>
+                            </div>
+                            <p class="dateTime">{{classMap.class[2].date| date:"yyyy-MM-dd HH:mm"}}</p>
+                        </li>
+                        <li ng-class="{'cur':classMap.class[3].cur}">
+                            <p class="txt">确认收货,退款完成</p>
+                            <div class="circleNum">
+                                <b>4</b>
+                                <div class="iWrap" ng-if="refund.status != 'CLOSED'&& refundNum>2"><i class="glyphicon glyphicon-ok"></i></div>
+                                <div class="leftLine" ng-if="refund.status != 'CLOSED'&& refundNum>2"></div>
+                            </div>
+                            <p class="dateTime">{{classMap.class[3].date| date:"yyyy-MM-dd HH:mm"}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

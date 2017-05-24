@@ -1,0 +1,544 @@
+
+
+.rentOrderDetailBody {
+  .flow {
+    height: 155px;
+    width: 1060px;
+    margin: 0 auto;
+    .rowLine {
+      width: 800px;
+      border: 1px solid #bbb;
+      background: #DDDDDD;
+      margin: 0px auto;
+      position: relative;
+      left: 10px;
+      z-index: 1;
+      bottom: -60px;
+      height: 13px;
+    }
+    .numberUl {
+      position: relative;
+      z-index: 3;
+      list-style: none;
+      li {
+        width: 200px;
+        float: left;
+        text-align: center;
+        div.circleNum {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          background: #DDDDDD;
+          border: 1px solid #bbb;
+          margin: 0 auto;
+          border-radius: 50%;
+          position: relative;
+          b {
+            font-size: 16px;
+            color: #fff;
+          }
+          .leftLine {
+            background: #44958a none repeat scroll 0 0;
+            height: 9px;
+            left: -166px;
+            position: absolute;
+            top: 18px;
+            width: 175px;
+            z-index: 5;
+            //display: none;
+          }
+
+          .iWrap {
+            width: 30px;
+            height: 30px;
+            margin: 7px auto;
+            background: #44958a;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 22px;
+            left: 50%;
+            //display: none;
+            margin: -15px;
+            i {
+              color: #fff;
+            }
+          }
+        }
+        p.dateTime {
+          font-size: 12px;
+          color: #999;
+          margin-top: 10px;
+        }
+        p.txt {
+          font-weight: bold;
+          color: #aaaaaa;
+        }
+        p:hover {
+          cursor: pointer;
+        }
+      }
+      li.cur .circleNum .leftLine, li.cur .circleNum .iWrap {
+        display: block;
+      }
+      .circleNum:hover {
+        cursor: pointer;
+      }
+      li.cur p.txt {
+        color: #44958a;
+      }
+    }
+  }
+
+
+  .orderWrap {
+    width: 99%;
+    margin: 10px auto 0 auto;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    .orderInformation {
+      border-right: 1px solid #e0e0e0;
+      h4 {
+        font-size: 14px;
+        line-height: 44px;
+        min-height: 44px;
+        height: 44px;
+        margin: 0;
+        text-indent: 10px;
+        background: #f5f5f5;
+        color: #101010;
+      }
+      .orderInformationLeft {
+        padding: 10px;
+        border-top: 1px solid #e0e0e0;
+        span {
+          color: #999;
+          font-size: 14px;
+          display: inline-block;
+        }
+        p {
+          display: inline-block;
+          font-size: 14px;
+          padding-left: 10px;
+          color: #101010;
+          margin: 0;
+        }
+      }
+    }
+    .orderStatus {
+      width: 100%;
+      .orderStatusLeft {
+        width: 10%;
+        float: left;
+        margin-left: 20px;
+        text-align: end;
+        padding-top: 30px;
+        .glyphicon {
+          font-size: 34px;
+          color: #ba9f6e;
+        }
+      }
+      .orderStatusRight {
+        margin-left: 20px;
+        width: 100%;
+        padding-top: 30px;
+        .form {
+          .btn {
+            margin-left: 12px !important;
+            margin-right: 12px !important;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid #dadada;
+            border-radius: 6px;
+            height: 30px;
+            padding: 0 10px;
+            color: #fff;
+            min-width: 90px;
+          }
+          .btn.ok {
+            background: #ba9f6e;
+            color: #fff;
+          }
+          .btn.reject {
+            background: #e85084;
+          }
+          .btn.cancle {
+            background: #00aaee;
+            color: #fff;
+          }
+        }
+        .qr-btn {
+
+        }
+        .qr-btn {
+          margin-left: 12px !important;
+          margin-right: 12px !important;
+          font-size: 14px;
+          outline: none;
+          border: 1px solid #dadada;
+          border-radius: 6px;
+          height: 30px;
+          padding: 0 10px;
+          color: #333333;
+          min-width: 90px;
+          background: #fff;
+        }
+
+        .orderStatusRightTop {
+          .messageSpan {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          p {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 5px;
+          }
+          .msg {
+            font-size: 14px;
+            color: #101010;
+            margin-bottom: 20px;
+          }
+          .message {
+            /*margin-top: 32px;*/
+            font-size: 14px;
+            color: #101010;
+            margin-bottom: 10px;
+            .messageWrap {
+              margin-top: 20px;
+            }
+            .messageLeft {
+              margin: 0;
+              width: 85px;
+              font-style: normal;
+              font-weight: lighter;
+              display: inline-block;
+            }
+            .messageRight {
+              margin: 0 0 0 10px;
+              font-weight: lighter;
+              display: inline-block;
+              font-style: normal;
+              input[type=text], select {
+                width: 276px;
+                min-width: 276px;
+                height: 30px;
+                border: 1px solid #e0e0e0;
+                border-radius: 4px;
+                outline: none;
+                padding-left: 10px;
+                background: #fff;
+                font-size: 14px;
+                color: #666;
+              }
+            }
+          }
+          .refundImg {
+            margin-top: 20px;
+            i {
+              font-size: 14px;
+              color: #101010;
+              font-style: normal;
+              display: inline-block;
+              width: 85px;
+            }
+            .rightImg {
+              vertical-align: top;
+              width: 80px;
+              height: 80px;
+              margin-left: 10px;
+              border: 1px solid #e0e0e0;
+              border-radius: 5px;
+              img {
+                border-radius: 5px;
+                width: 80px;
+                height: 80px;
+              }
+            }
+          }
+          .btn {
+            background: #00aaee;
+            height: 30px;
+            padding: 0 10px;
+            color: #fff;
+            min-width: 90px;
+          }
+
+          .btn {
+            margin-left: 12px !important;
+            margin-right: 12px !important;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid #dadada;
+            border-radius: 6px;
+            height: 30px;
+            padding: 0 10px;
+            color: #fff;
+            min-width: 90px;
+          }
+          .btn.ok {
+            background: #ba9f6e;
+            color: #fff;
+          }
+          .btn.reject {
+            background: #e85084;
+          }
+          .btn.cancle {
+            color: #fff;
+          }
+          .unpayBtn {
+            height: 30px;
+            padding: 0 10px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            background: #00aaee;
+            color: #fff;
+            outline: none;
+          }
+          .unpayBtn:last-child {
+            background: #fff;
+            color: #101010;
+          }
+          .commonBtn {
+            height: 30px;
+            padding: 0 10px;
+            border: 1px solid #e0e0e0;
+            background: #00aaee;
+            outline: none;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #fff;
+            margin-right: 10px;
+          }
+        }
+        .msg {
+          font-size: 14px;
+          color: #101010;
+          margin-bottom: 20px;
+        }
+        .commonBtn {
+          height: 30px;
+          padding: 0 10px;
+          border: 1px solid #e0e0e0;
+          background: #00aaee;
+          outline: none;
+          border-radius: 4px;
+          font-size: 14px;
+          color: #fff;
+          margin-right: 10px;
+        }
+        .md-button {
+          min-height: 30px;
+          height: 30px;
+          line-height: 30px;
+        }
+        .orderStatusRightBottom {
+          .current {
+            width: 100%;
+            padding: 10px 0;
+            .currentLeft {
+              span {
+                font-size: 14px;
+                color: #101010;
+              }
+
+            }
+            input[type=text], select {
+              margin-left: 20px;
+              padding-left: 10px;
+              width: 276px;
+              min-width: 276px;
+              height: 30px;
+              border: 1px solid #e0e0e0;
+              border-radius: 4px;
+              outline: none;
+              background: #fff;
+              font-size: 14px;
+              color: #666;
+            }
+            textarea {
+              margin-left: 20px;
+              padding-left: 10px;
+              width: 276px;
+              min-width: 276px;
+              border: 1px solid #e0e0e0;
+              border-radius: 4px;
+              outline: none;
+              background: #fff;
+              font-size: 14px;
+              color: #666;
+              resize: none;
+              height: 80px;
+            }
+            .currentRight {
+
+            }
+
+          }
+          .bottomButton {
+            text-align: center;
+            width: 100%;
+            margin-left: -353px;
+            input {
+              margin-right: 20px;
+            }
+            .commonBtn {
+              height: 30px;
+              padding: 0 10px;
+              border: 1px solid #e0e0e0;
+              background: #00aaee;
+              outline: none;
+              border-radius: 4px;
+              font-size: 14px;
+              color: #fff;
+              margin-right: 10px;
+            }
+
+            .commonBtn {
+              height: 30px;
+              padding: 0 10px;
+              border: 1px solid #e0e0e0;
+              background: #fff;
+              outline: none;
+              border-radius: 4px;
+              font-size: 14px;
+              color: #333333;
+              margin-right: 10px;
+            }
+            .commonBtn.ok {
+              background: #ba9f6e;
+              color: #fff;
+            }
+            .commonBtn.reject {
+              background: #e85084;
+            }
+            .commonBtn.change {
+              color: #fff;
+              background: #00aaee;
+            }
+            .commonBtn.cancle {
+              color: #fff;
+            }
+
+            .md-button {
+              min-height: 30px;
+              height: 30px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+    .layoutTableWrap {
+      border: 1px solid #e0e0e0;
+      width: 99%;
+
+      margin: 10px auto 0 auto;
+      .TableTop {
+        background: #fff9eb;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        .orderCode {
+          margin: 0 30px 0 10px;
+        }
+        input[type="checkbox"] {
+          float: left;
+          margin: 10px 0 0 10px;
+        }
+        .glyphicon-tags {
+          color: #ba9f6e;
+        }
+      }
+      div.orderTitle > div {
+        height: 40px;
+      }
+      .layouyTable {
+        width: 100%;
+        .commodityImg {
+          width: 70px;
+          height: 70px;
+          margin: 15px auto;
+
+        }
+        .column > div, div.lie {
+          border-top: 1px solid #e0e0e0;
+          border-right: 1px solid #e0e0e0;
+        }
+        div.lie.last {
+          border-right: none;
+        }
+        .qr-btn {
+          width: 80px;
+          height: 40px;
+          border: 1px solid #e0e0e0;
+          border-radius: 5px;
+          background: deepskyblue;
+          color: #ffffff;
+        }
+        .commodityParmer {
+          color: #ccc;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .modal {
+    .modal-dialog {
+      width: 330px;
+      .modal-content {
+        border-radius: 6px;
+        box-shadow: 0 0 0 #fff;
+        .modal-header {
+          text-align: center;
+
+          background: #eeeeee;
+          padding: 10px;
+          font-size: 18px;
+          font-family: inherit;
+          height: 50px;
+        }
+        .modal-body {
+          text-align: center;
+
+          padding: 30px 0 30px 0;
+          font-size: 16px;
+          color: #323232;
+        }
+        .modal-footer {
+          text-align: center;
+          .btn {
+            margin-left: 12px !important;
+            margin-right: 12px !important;
+            font-size: 14px;
+            width: 66px;
+            height: 30px;
+            outline: none;
+            border: 1px solid #dadada;
+            border-radius: 6px;
+          }
+          .btn.ok {
+            background: #ba9f6e;
+            color: #fff;
+          }
+          .btn.reject {
+            background: #e85084;
+          }
+          .btn.cancle {
+            color: #101010;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
