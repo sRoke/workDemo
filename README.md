@@ -1,7 +1,7 @@
 # workDemo
 
  #有趣的小问题
- ##问题1
+   ##问题1
 
  * 此问题与数组相关 
  * 1:了解素组相关方法
@@ -37,9 +37,9 @@ var arrSlice2 = function(arr){
 }
 arrSlice2(arr2);
 ```
-###问题所在:
-从slice()定义上看出获取的新数组newArr是一个新数组不会修改老数组
-从两个方法输出对比;都是通过slice()方法获取的新数组newArr然后对newArr进行操作,为什么操作后
-arr1的原数组未发生改变( console.log('oldArr-last===',arr)处看出)
-而arr2的原数组发生了改变(console.log('oldArr2-last===',arr)处看出)
-涉及主要知识点js数组,对象,对象克隆,slice()方法  (注:本人认为此处可以用后台语言中的对象指针和对象地址来解释更容易理解)
+  ###问题所在:
+  从slice()定义上看出获取的新数组newArr是一个新数组不会修改老数组
+  从两个方法输出对比;都是通过slice()方法获取的新数组newArr然后对newArr进行操作,为什么操作后
+  arr1的原数组未发生改变( console.log('oldArr-last===',arr)处看出)
+  而arr2的原数组发生了改变(console.log('oldArr2-last===',arr)处看出)
+  涉及主要知识点js数组,对象,对象克隆,slice()方法  (注:本人认为此处可以用后台语言中的对象指针和对象地址来解释更容易理解)
